@@ -90,7 +90,7 @@ const loop = () => {
 
     ctx.drawImage(math, 0,0,canvas.width, canvas.height)
 
-    ctx.fillStyle = 'royalblue'
+    ctx.fillStyle = 'black'
     ctx.globalAlpha = 0.7
     ctx.fillRect(0,0,canvas.width, canvas.height)
     ctx.globalAlpha = 1
@@ -114,14 +114,14 @@ const loop = () => {
 
         if (M_X > ball.x -200 && M_X < ball.x+200 && M_Y > ball.y-200 && M_Y < ball.y+200){
 
-            ctx.strokeStyle = '#5E80FF'
+            ctx.strokeStyle = '#909090'
             ball.r = 55
             ball.clicked = true
             
            
         }else{
            
-            ctx.strokeStyle = '#5E80FF'
+            ctx.strokeStyle = '#505050'
             ball.r = 50
             ball.clicked = false
            
