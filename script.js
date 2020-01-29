@@ -77,7 +77,7 @@ var colors = [
     'royalblue',
     'purple',
     'green',
-    'gold'
+ 
 ]
 
 var rand = Math.floor(Math.random()*colors.length)
