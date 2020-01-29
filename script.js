@@ -90,7 +90,7 @@ const loop = () => {
 
     ctx.drawImage(math, 0,0,canvas.width, canvas.height)
 
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = 'royalblue'
     ctx.globalAlpha = 0.7
     ctx.fillRect(0,0,canvas.width, canvas.height)
     ctx.globalAlpha = 1
