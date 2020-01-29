@@ -16,7 +16,7 @@ body{
 .title{
     font-size: 10vw;
     margin: none;
-    text-shadow: 0px 5px 15px black;
+    text-shadow: 5px 5px 0px #B0B0B0, 10px 10px 0px gray;
 
 }
 
@@ -24,7 +24,7 @@ body{
 
     font-size: 7vw;
     color: lightgray;
-    text-shadow: 0px 5px 15px black;
+    text-shadow: 5px 5px 0px #909090, 10px 10px 0px #606060;
 }
 .navbar{
 
@@ -42,7 +42,7 @@ body{
     bottom: 0;
     margin: none;
     color: white;
-     text-shadow: 0px 5px 8px black;
+
 
 
 
@@ -125,19 +125,20 @@ img{
 .assmtitle{
 
     font-size: 2.5vw;
-    color: white;
+    color: black;
 
 
 }
 .assm{
 
+    font-family: Varela;
     font-size: 2vw;
     color: gray;
     transition: 0.2s color ease;
 }
 .assm:hover{
 
-    color: white;
+    color: black;
 }
 
 .assmt{
@@ -145,7 +146,7 @@ img{
 
     
     list-style: none;
-    background-color: black;
+    background-color: white;
     width: fit-content;
     margin: auto;
     padding: 3vw;
@@ -155,10 +156,7 @@ img{
 
 }
 
-.assmt:hover{
 
-    border-color: gold;
-}
 canvas{
 
     position: fixed;

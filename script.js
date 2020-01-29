@@ -77,7 +77,6 @@ var colors = [
     'royalblue',
     'purple',
     'green',
- 
 ]
 
 var rand = Math.floor(Math.random()*colors.length)
@@ -91,7 +90,7 @@ const loop = () => {
 
     ctx.drawImage(math, 0,0,canvas.width, canvas.height)
 
-    ctx.fillStyle = colors[rand]
+    ctx.fillStyle = 'royalblue'
     ctx.globalAlpha = 0.7
     ctx.fillRect(0,0,canvas.width, canvas.height)
     ctx.globalAlpha = 1
@@ -115,14 +114,14 @@ const loop = () => {
 
         if (M_X > ball.x -200 && M_X < ball.x+200 && M_Y > ball.y-200 && M_Y < ball.y+200){
 
-            ctx.strokeStyle = 'gold'
+            ctx.strokeStyle = '#5E80FF'
             ball.r = 55
             ball.clicked = true
             
            
         }else{
            
-            ctx.strokeStyle = 'white'
+            ctx.strokeStyle = '#5E80FF'
             ball.r = 50
             ball.clicked = false
            
@@ -132,18 +131,18 @@ const loop = () => {
 
             if (ball.x < M_X){
 
-                ball.xspeed += 0.4
+                ball.xspeed += 0.1
             }else{
 
-                ball.xspeed -= 0.4
+                ball.xspeed -= 0.1
             }
 
             if (ball.y < M_Y){
 
-                ball.yspeed += 0.4
+                ball.yspeed += 0.1
             }else{
 
-                ball.yspeed -= 0.4
+                ball.yspeed -= 0.1
             }
 
         }
@@ -165,17 +164,17 @@ const loop = () => {
 
         if (ball.xspeed >= 0){
 
-            ball.xspeed += 0.3;
+            ball.xspeed +=0.1;
         }else{
     
-            ball.xspeed -= 0.3;
+            ball.xspeed -=0.1;
         }
        if (ball.yspeed >= 0){
     
-        ball.yspeed += 0.3;
+        ball.yspeed +=0.1;
        }else{
     
-        ball.yspeed -= 0.3;
+        ball.yspeed -=0.1;
        }
 
         if (ball.x<ball.r || ball.x >canvas.width-ball.r){
@@ -192,7 +191,7 @@ const loop = () => {
     }
 
   
-    
+
     window.requestAnimationFrame(loop)
 }
 
